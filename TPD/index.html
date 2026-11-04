@@ -3,120 +3,128 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Investimento | Wilian D'avila</title>
-<meta name="description" content="Identidade visual que posiciona a sua marca. Conheça os escopos e o investimento.">
+<title>Sua história vira marca | Wilian D'avila</title>
+<meta name="description" content="Eu levo a história de quem construiu o negócio para dentro da marca. Conheça o portfólio, os escopos e o investimento.">
+<meta name="theme-color" content="#0b0b0a">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#07070b;--ink:#17161c;--mut:#6f6d78;--line:#e7e4ee;--acc:#8b45e8;--soft:#f3effb}
+:root{--bg:#0b0b0a;--panel:#1b1b19;--panel2:#242422;--ink:#e6e3d3;--mut:#a3a092;--line:#31302c;--amb:#a67c3f}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
-body{font-family:"DM Sans",system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.55;-webkit-font-smoothing:antialiased}
+body{font-family:"Inter Tight",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:clip}
 img{display:block;max-width:100%}
-.wrap{width:min(1136px,100%);margin:auto;padding:0 24px}
-.dark{background:var(--bg);color:#f2f1f5}
-.eyebrow{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--acc)}
-h2{font-size:clamp(32px,5vw,52px);line-height:1.08;letter-spacing:-.02em;font-weight:700;margin-top:12px}
-em{font-style:normal;color:var(--acc)}
-section{padding:96px 0}
-.brand{font-size:15px;font-weight:700;letter-spacing:.06em}
-.brand b{color:#a874f2}
-h1{font-size:clamp(44px,10.5vw,132px);font-weight:300;letter-spacing:.04em;line-height:1;text-transform:uppercase;margin:18px 0 22px}
-.lead{font-size:clamp(18px,2.2vw,22px);color:#b9b6c4;max-width:34em}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 30px;border-radius:99px;background:var(--acc);color:#fff;font-weight:700;text-decoration:none;transition:transform .2s,background .2s}
-.btn:hover{background:#7a33da;transform:translateY(-2px)}
-.btn:focus-visible{outline:3px solid #c9a8f8;outline-offset:3px}
-.btn svg{width:21px;height:21px}
-.about{display:grid;grid-template-columns:5fr 6fr;gap:64px;align-items:center}
-.about img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:10px;filter:grayscale(1)}
-.about p:not(.eyebrow){margin-top:16px;font-size:18px;color:#3b3945}
-.stats{display:flex;flex-wrap:wrap;gap:24px 44px;margin-top:36px}
-.stats b{display:block;font-size:40px;line-height:1.1}
-.stats span{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
-.quote{text-align:center}
-.quote p{font-size:clamp(24px,3.6vw,38px);line-height:1.3;font-weight:300;max-width:24em;margin:auto}
-.gal{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:40px max(24px,calc((100vw - 1088px)/2)) 12px;scrollbar-color:#3a3545 transparent}
-.gal figure{flex:0 0 min(78vw,420px);scroll-snap-align:center}
-.gal img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;background:#16151c}
-.gal figcaption{margin-top:12px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#a09dac}
-.tl{list-style:none;padding:0;display:grid;grid-template-columns:repeat(6,1fr);margin-top:40px;border-top:1px solid #26242e}
-.tl li{padding:24px 20px;border-left:1px solid #26242e}
-.tl li:first-child{border-left:0}
-.tl span{font-size:13px;color:#a874f2}
-.tl h3{font-size:17px;line-height:1.25;margin-top:12px}
-.center{text-align:center}
-.center>p:not(.eyebrow){color:var(--mut);margin-top:12px;font-size:18px}
-.plans{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:48px auto 0;max-width:800px;text-align:left}
-.plan{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:16px;padding:32px 28px}
-.plan.top{border:1.5px solid var(--acc)}
-.tag{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
-.top .tag{color:var(--acc)}
-.plan h3{font-size:26px;line-height:1.15;margin-top:8px}
-.plan>p{color:var(--mut);margin-top:6px}
-.plan ul{list-style:none;padding:0;margin:22px 0 28px;flex:1}
-.plan li{padding:9px 0;border-top:1px solid var(--line)}
-.price{font-size:46px;font-weight:700;letter-spacing:-.03em;line-height:1}
-.price small{font-size:15px;font-weight:400;color:var(--mut);letter-spacing:0;margin-right:5px}
-.price sup{font-size:18px}
-.plan .btn{margin-top:22px}
-.notes{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:800px;margin:24px auto 0;text-align:left}
-.note{background:var(--soft);border-radius:12px;padding:20px 24px}
-.note b{display:block}
-.note span{color:#55525f}
-.end{text-align:center;padding:120px 0;background:radial-gradient(60% 70% at 50% 0%,#3a1a78 0%,transparent 70%),var(--bg)}
-.end p{color:#b9b6c4;margin:18px auto 32px;max-width:30em;font-size:18px}
-footer{background:var(--bg);color:#8e8b99;font-size:13px;padding:28px 0}
-footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-@media (max-width:860px){
- section{padding:72px 0}
- .about{grid-template-columns:1fr;gap:36px}
- .tl{grid-template-columns:1fr 1fr}
- .tl li:nth-child(odd){border-left:0}
- .tl li{border-bottom:1px solid #26242e}
- .plans,.notes{grid-template-columns:1fr}
-}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+a{color:inherit}
+.wrap{width:min(1180px,100%);margin:auto;padding:0 24px}
+section{padding:120px 0}
+i.s,h1 i,h2 i{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400;letter-spacing:-.01em}
+.eyebrow{font-size:13px;color:var(--mut);letter-spacing:.02em}
+h2{font-size:clamp(36px,5.6vw,72px);line-height:1.04;letter-spacing:-.025em;font-weight:500;margin-top:14px}
+.btn{display:inline-flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;padding:6px 6px 6px 26px;border-radius:99px;background:var(--ink);color:#111;font-weight:500;font-size:17px;text-decoration:none;transition:transform .25s,background .25s}
+.btn b{display:grid;place-items:center;flex:none;width:44px;height:44px;border-radius:50%;background:#0b0b0a;color:var(--ink);font-weight:400}
+.btn svg{width:20px;height:20px}
+.btn:hover{background:#f4f1e2;transform:translateY(-2px)}
+.btn:focus-visible{outline:3px solid var(--amb);outline-offset:3px}
 .tunnel{height:300vh;height:300svh;background:var(--bg)}
 .stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:flex;align-items:center;justify-content:center;background:var(--bg)}
-.tbg{position:absolute;inset:0;background:radial-gradient(circle at center,rgba(139,69,232,.24) 0,transparent 68%),radial-gradient(#2a1a55 1px,transparent 1px);background-size:auto,28px 28px;-webkit-mask-image:radial-gradient(ellipse 75% 75% at 50% 50%,#000 55%,transparent 100%);mask-image:radial-gradient(ellipse 75% 75% at 50% 50%,#000 55%,transparent 100%)}
+.tbg{position:absolute;inset:0;background:radial-gradient(60% 55% at 72% 62%,rgba(166,124,63,.3) 0,transparent 70%),radial-gradient(50% 50% at 25% 40%,rgba(120,110,70,.14) 0,transparent 70%)}
 .tring{position:absolute;border-radius:50%;pointer-events:none}
-.r1{width:48vmin;height:48vmin;border:1px solid rgba(168,116,242,.16)}
-.r2{width:76vmin;height:76vmin;border:1px dashed rgba(255,255,255,.1)}
+.r1{width:48vmin;height:48vmin;border:1px solid rgba(230,227,211,.1)}
+.r2{width:76vmin;height:76vmin;border:1px dashed rgba(230,227,211,.08)}
 .tplane{position:absolute;inset:0;perspective:1200px;transform-style:preserve-3d;pointer-events:none}
-.tcard{position:absolute;left:50%;top:50%;width:var(--cw,240px);aspect-ratio:4/5;margin:0;border-radius:16px;overflow:hidden;background:#16151c;box-shadow:0 24px 60px rgba(0,0,0,.7);outline:1px solid rgba(255,255,255,.14);opacity:0;will-change:transform,opacity}
-.tcard img{width:100%;height:100%;object-fit:cover}
-.tcard figcaption{position:absolute;inset:auto 0 0;padding:32px 14px 12px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:linear-gradient(to top,rgba(0,0,0,.8),transparent)}
-.brand{position:absolute;top:28px;left:max(24px,calc((100vw - 1088px)/2));z-index:3}
+.tcard{position:absolute;left:50%;top:50%;width:var(--cw,240px);aspect-ratio:4/5;margin:0;border-radius:16px;overflow:hidden;background:var(--panel);box-shadow:0 24px 60px rgba(0,0,0,.7);outline:1px solid rgba(230,227,211,.12);opacity:0;will-change:transform,opacity}
+.tcard img{width:100%;height:100%;object-fit:cover;filter:brightness(.66) saturate(.9)}
+.tcard figcaption{position:absolute;inset:auto 0 0;padding:32px 14px 12px;font-size:12px;color:var(--ink);background:linear-gradient(to top,rgba(0,0,0,.8),transparent)}
+.brand{position:absolute;top:28px;left:max(24px,calc((100vw - 1132px)/2));z-index:3;font-size:16px;font-weight:600;letter-spacing:-.01em}
 .tcopy{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 24px;width:100%;pointer-events:none}
-.tcopy::before{content:"";position:absolute;z-index:-1;left:50%;top:50%;width:min(1000px,120vw);height:150%;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(7,7,11,.86) 0,rgba(7,7,11,.6) 55%,transparent 100%)}
-.tcopy .btn{pointer-events:auto;margin-top:32px}
-.tprompt{position:absolute;bottom:26px;z-index:3;display:flex;flex-direction:column;align-items:center;gap:8px;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:#a09dac}
-.tprompt i{width:1px;height:24px;background:linear-gradient(var(--acc),transparent)}
-@media (max-width:767px){.tplane{perspective:900px}.brand{top:22px}.tcopy .btn{width:100%;max-width:320px}}
-@media (prefers-reduced-motion:reduce){.tunnel{height:auto}.stage{position:relative}.tprompt{display:none}}
-.tcard img{filter:brightness(.68) saturate(.92)}
-.tcopy h1,.tcopy .lead{text-shadow:0 2px 28px rgba(7,7,11,.85),0 0 4px rgba(7,7,11,.5)}
-.tcopy .eyebrow{color:#d2b6fa;text-shadow:0 1px 14px rgba(7,7,11,.95)}
-.tcopy .lead{color:#e6e4ec}
+.tcopy::before{content:"";position:absolute;z-index:-1;left:50%;top:50%;width:min(1100px,130vw);height:160%;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(11,11,10,.88) 0,rgba(11,11,10,.62) 55%,transparent 100%)}
+h1{font-size:clamp(50px,10.4vw,142px);font-weight:500;letter-spacing:-.035em;line-height:.98;margin:14px 0 22px;text-shadow:0 2px 28px rgba(11,11,10,.85)}
+h1 i{display:block;font-size:1.08em}
+.lead{font-size:clamp(18px,2.1vw,22px);line-height:1.4;color:var(--ink);max-width:31em;text-shadow:0 2px 20px rgba(11,11,10,.9)}
+.tcopy .eyebrow{color:var(--ink)}
+.tcopy .btn{pointer-events:auto;margin-top:30px}
+.tprompt{position:absolute;bottom:24px;z-index:3;display:flex;flex-direction:column;align-items:center;gap:8px;font-size:12px;color:var(--mut)}
+.tprompt i{width:1px;height:24px;background:linear-gradient(var(--ink),transparent)}
+.mani{text-align:center}
+.mani .big{font-size:clamp(32px,5.2vw,66px);line-height:1.1;letter-spacing:-.025em;font-weight:500;max-width:19em;margin:auto}
+.mani .sub{font-size:clamp(18px,2vw,21px);color:var(--mut);max-width:34em;margin:40px auto 0}
+.js .w{opacity:.16;transition:opacity .35s}
+.js .w.on{opacity:1}
+.head{max-width:21em}
+.mos{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-flow:dense;gap:10px;margin-top:56px}
+.mos figure{position:relative;margin:0;border-radius:14px;overflow:hidden;background:var(--panel);aspect-ratio:1/1}
+.mos figure.lg{grid-column:span 2;grid-row:span 2}
+.mos img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.mos figure:hover img{transform:scale(1.05)}
+.mos figcaption{position:absolute;inset:auto 0 0;padding:36px 16px 14px;font-size:14px;color:var(--ink);background:linear-gradient(to top,rgba(0,0,0,.72),transparent)}
+.say{grid-column:span 2;display:flex;flex-direction:column;justify-content:flex-end;gap:10px;padding:28px;border-radius:14px;background:var(--panel)}
+.say p{font-size:clamp(24px,2.7vw,34px);line-height:1.12;letter-spacing:-.02em}
+.say small{font-size:16px;color:var(--mut);line-height:1.45}
+.say.amb{background:radial-gradient(90% 120% at 90% 100%,rgba(166,124,63,.5) 0,transparent 70%),var(--panel2)}
+.say .btn{align-self:flex-start;margin-top:14px}
+.about{display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:center}
+.about img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px;filter:grayscale(1) sepia(.12) brightness(.92)}
+.about p.t{margin-top:18px;font-size:19px;color:var(--mut)}
+.about p.t strong{color:var(--ink);font-weight:500}
+.stats{display:flex;flex-wrap:wrap;gap:24px 48px;margin-top:40px;padding-top:28px;border-top:1px solid var(--line)}
+.stats b{display:block;font-size:44px;font-weight:500;letter-spacing:-.03em;line-height:1.1}
+.stats span{font-size:14px;color:var(--mut)}
+.tl{list-style:none;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:56px}
+.tl li{padding:22px 18px;min-height:168px;border-radius:14px;background:var(--panel)}
+.tl span{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-size:24px;color:var(--mut)}
+.tl h3{font-size:18px;line-height:1.2;font-weight:500;margin-top:30px}
+.center{text-align:center}
+.center>p.s2{color:var(--mut);margin-top:14px;font-size:19px}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:56px auto 0;max-width:880px;text-align:left}
+.plan{display:flex;flex-direction:column;border-radius:18px;padding:32px 28px 28px;background:var(--panel)}
+.plan.top{background:radial-gradient(90% 60% at 100% 100%,rgba(166,124,63,.4) 0,transparent 75%),var(--panel2)}
+.tag{font-size:14px;color:var(--mut)}
+.plan h3{font-size:30px;line-height:1.1;font-weight:500;letter-spacing:-.02em;margin-top:8px}
+.plan>p{color:var(--mut);margin-top:8px}
+.plan ul{list-style:none;padding:0;margin:22px 0 28px;flex:1}
+.plan li{padding:10px 0;border-top:1px solid var(--line)}
+.price{font-size:50px;font-weight:500;letter-spacing:-.035em;line-height:1}
+.price small{font-size:16px;color:var(--mut);letter-spacing:0;margin-right:6px}
+.price sup{font-size:19px}
+.plan .btn{margin-top:22px;font-size:16px}
+.notes{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:880px;margin:10px auto 0;text-align:left}
+.note{border:1px solid var(--line);border-radius:14px;padding:18px 22px}
+.note b{display:block;font-weight:500}
+.note span{color:var(--mut)}
+.end{text-align:center;padding:150px 0;background:radial-gradient(55% 70% at 50% 100%,rgba(166,124,63,.32) 0,transparent 72%)}
+.end p{color:var(--mut);margin:22px auto 34px;max-width:30em;font-size:19px}
+footer{color:var(--mut);font-size:14px;padding:26px 0;border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media (max-width:860px){
+ section{padding:84px 0}
+ .about{grid-template-columns:1fr;gap:40px}
+ .mos{grid-template-columns:1fr 1fr}
+ .tl{grid-template-columns:1fr 1fr}
+ .tl li{min-height:136px}
+ .plans,.notes{grid-template-columns:1fr}
+ .tcopy .btn,.say .btn{width:100%;max-width:340px}
+ .tplane{perspective:900px}.brand{top:22px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tunnel{height:auto}.stage{position:relative}.tprompt{display:none}.btn,.mos img{transition:none}.js .w{opacity:1}}
 
 </style>
 </head>
 <body>
-<header class="tunnel dark" id="topo">
+<header class="tunnel" id="topo">
   <div class="stage">
     <div class="tbg" aria-hidden="true"></div>
     <div class="tring r1" aria-hidden="true"></div>
     <div class="tring r2" aria-hidden="true"></div>
     <div class="tplane" aria-hidden="true">
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img02.jpg" alt=""  draggable="false"><figcaption>Dayana Barreto</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img03.jpg" alt=""  draggable="false"><figcaption>Kaerre · Lab Dental</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img04.jpg" alt=""  draggable="false"><figcaption>TerraPrime</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img05.jpg" alt=""  draggable="false"><figcaption>Rafael Ferro</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img06.jpg" alt=""  draggable="false"><figcaption>DentisFlow</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img07.jpg" alt=""  draggable="false"><figcaption>Plenisse</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img08.jpg" alt=""  draggable="false"><figcaption>THA Artesanato</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img09.jpg" alt=""  draggable="false"><figcaption>effectLab</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img02.jpg" alt="" draggable="false"><figcaption>Dayana Barreto</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img03.jpg" alt="" draggable="false"><figcaption>Kaerre · Lab Dental</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img04.jpg" alt="" draggable="false"><figcaption>TerraPrime</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img05.jpg" alt="" draggable="false"><figcaption>Rafael Ferro</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img06.jpg" alt="" draggable="false"><figcaption>DentisFlow</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img07.jpg" alt="" draggable="false"><figcaption>Plenisse</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img08.jpg" alt="" draggable="false"><figcaption>THA Artesanato</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img09.jpg" alt="" draggable="false"><figcaption>effectLab</figcaption></figure>
       <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img10.jpg" alt="" loading="lazy" draggable="false"><figcaption>DentisFlow</figcaption></figure>
       <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img11.jpg" alt="" loading="lazy" draggable="false"><figcaption>Plenisse</figcaption></figure>
       <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img12.jpg" alt="" loading="lazy" draggable="false"><figcaption>THA Artesanato</figcaption></figure>
@@ -126,78 +134,86 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
       <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img16.jpg" alt="" loading="lazy" draggable="false"><figcaption>Metta · Concept Lab</figcaption></figure>
       <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img17.jpg" alt="" loading="lazy" draggable="false"><figcaption>Giovane Junc · Studio Dental</figcaption></figure>
     </div>
-    <div class="brand">WILIAN <b>D'AVILA®</b></div>
+    <div class="brand">Wilian D'avila®</div>
     <div class="tcopy">
-      <p class="eyebrow">Proposta TPD</p>
-      <h1>Investimento</h1>
-      <p class="lead">Identidade visual que posiciona a sua marca.</p>
-      <a class="btn" href="#investimento">Ver escopos e valores</a>
+      <p class="eyebrow">Proposta TPD · Investimento</p>
+      <h1>Sua história <i>vira marca.</i></h1>
+      <p class="lead">Eu não desenho logos. Eu levo quem você é para dentro da sua marca.</p>
+      <a class="btn" href="#manifesto">Entrar nessa história<b aria-hidden="true">↓</b></a>
     </div>
-    <div class="tprompt" aria-hidden="true"><span>Role para explorar</span><i></i></div>
+    <div class="tprompt" aria-hidden="true"><span>Role para atravessar</span><i></i></div>
   </div>
 </header>
 <main>
-<section><div class="wrap about">
-  <img src="https://investimento.marketingparalaboratorio.com.br/img/img01.jpg" alt="Retrato de Wilian D'avila">
+<section class="mani" id="manifesto"><div class="wrap">
+  <p class="big">Existe uma história que só você viveu. Os anos de bancada, as decisões difíceis, o motivo de nunca ter desistido. <i>Ela é a sua marca.</i> Só falta alguém mostrar isso ao mundo.</p>
+  <p class="sub">Tudo o que vemos desperta uma sensação. Sua marca não deveria seguir um segmento ou uma tendência. Ela precisa transmitir a sua essência, a sua personalidade e a identidade que você quer que as pessoas reconheçam.</p>
+</div></section>
+<section style="padding-top:0"><div class="wrap">
+  <div class="head"><p class="eyebrow">Portfólio</p>
+  <h2>Nenhuma dessas marcas <i>poderia ser de outra pessoa.</i></h2></div>
+  <div class="mos">
+      <figure class="lg"><img src="https://investimento.marketingparalaboratorio.com.br/img/img14.jpg" alt="Projeto de marca ellas TPD" loading="lazy"><figcaption>ellas TPD</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img02.jpg" alt="Projeto de marca Dayana Barreto" loading="lazy"><figcaption>Dayana Barreto</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img03.jpg" alt="Projeto de marca Kaerre · Lab Dental" loading="lazy"><figcaption>Kaerre · Lab Dental</figcaption></figure>
+      <div class="say"><p>Não existe modelo pronto.<br><i class="s">Cada marca nasce de uma conversa.</i></p><small>É ouvindo o que você viveu que eu encontro o que nenhuma outra marca pode dizer.</small></div>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img04.jpg" alt="Projeto de marca TerraPrime" loading="lazy"><figcaption>TerraPrime</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img05.jpg" alt="Projeto de marca Rafael Ferro" loading="lazy"><figcaption>Rafael Ferro</figcaption></figure>
+      <figure class="lg"><img src="https://investimento.marketingparalaboratorio.com.br/img/img13.jpg" alt="Projeto de marca Hospital de Olhos de Cascavel" loading="lazy"><figcaption>Hospital de Olhos de Cascavel</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img06.jpg" alt="Projeto de marca DentisFlow" loading="lazy"><figcaption>DentisFlow</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img07.jpg" alt="Projeto de marca Plenisse" loading="lazy"><figcaption>Plenisse</figcaption></figure>
+      <div class="say"><p>O que era memória<br><i class="s">vira forma, cor e papel.</i></p><small>Sua origem, seu jeito e sua convicção passam a existir no que as pessoas veem.</small></div>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img08.jpg" alt="Projeto de marca THA Artesanato" loading="lazy"><figcaption>THA Artesanato</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img09.jpg" alt="Projeto de marca effectLab" loading="lazy"><figcaption>effectLab</figcaption></figure>
+      <figure class="lg"><img src="https://investimento.marketingparalaboratorio.com.br/img/img16.jpg" alt="Projeto de marca Metta · Concept Lab" loading="lazy"><figcaption>Metta · Concept Lab</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img10.jpg" alt="Projeto de marca DentisFlow" loading="lazy"><figcaption>DentisFlow</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img11.jpg" alt="Projeto de marca Plenisse" loading="lazy"><figcaption>Plenisse</figcaption></figure>
+      <div class="say"><p>Quando a marca é verdadeira,<br><i class="s">ela se sente antes de se ler.</i></p><small>Tudo o que vemos desperta uma sensação. A sua deveria ser reconhecida como sua.</small></div>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img12.jpg" alt="Projeto de marca THA Artesanato" loading="lazy"><figcaption>THA Artesanato</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img17.jpg" alt="Projeto de marca Giovane Junc · Studio Dental" loading="lazy"><figcaption>Giovane Junc · Studio Dental</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img15.jpg" alt="Projeto de marca Plenisse" loading="lazy"><figcaption>Plenisse</figcaption></figure>
+      <div class="say amb"><p>A próxima história<br><i class="s">pode ser a sua.</i></p><a class="btn" href="#investimento">Ver como começar<b aria-hidden="true">↓</b></a></div>
+  </div>
+</div></section>
+<section style="padding-top:0"><div class="wrap about">
+  <img src="https://investimento.marketingparalaboratorio.com.br/img/img01.jpg" alt="Retrato de Wilian D'avila" loading="lazy">
   <div>
-    <p class="eyebrow">Quem assina</p>
-    <h2>Wilian D'avila®</h2>
-    <p>Sou formado em administração de empresas e trabalho com design há 21 anos.</p>
-    <p>Minha especialidade é posicionar marcas de maneira correta, alinhando os objetivos da empresa a uma narrativa visual congruente e emocional.</p>
-    <p>Para isso extraio o máximo da história de cada empreendedor e uso ela como um fator <em><b>diferenciador</b></em>.</p>
+    <p class="eyebrow">Quem vai ouvir a sua história</p>
+    <h2>Wilian D'avila<i>®</i></h2>
+    <p class="t">Especialista em posicionamento de marca. Formado em administração de empresas, trabalho com design há 21 anos.</p>
+    <p class="t">Meu trabalho é alinhar os objetivos da sua empresa a uma narrativa visual congruente e emocional.</p>
+    <p class="t"><strong>Extraio o máximo da história de cada empreendedor e transformo essa história no seu maior diferencial.</strong></p>
     <div class="stats"><div><b>21</b><span>anos de design</span></div><div><b>+150</b><span>marcas posicionadas</span></div><div><b>100%</b><span>entrega digital</span></div></div>
   </div>
 </div></section>
-<section class="dark quote"><div class="wrap">
-  <p>Tudo o que vemos desperta uma sensação. Sua marca não deveria seguir um segmento ou uma tendência: ela precisa transmitir a sua <em>essência</em>, a sua personalidade e a identidade que você quer que as pessoas reconheçam.</p>
+<section style="padding-top:0"><div class="wrap">
+  <p class="eyebrow">Cronograma de entrega</p>
+  <h2>Da sua história <i>à sua marca.</i></h2>
+  <ol class="tl">
+      <li><span>1</span><h3>Reunião para briefing</h3></li>
+      <li><span>2</span><h3>Agendamento</h3></li>
+      <li><span>3</span><h3>Início de projeto</h3></li>
+      <li><span>4</span><h3>Entrega de proposta</h3></li>
+      <li><span>5</span><h3>Criação de papelaria</h3></li>
+      <li><span>6</span><h3>Entrega de todos os materiais</h3></li>
+  </ol>
 </div></section>
-<section class="dark" style="padding-top:0">
-  <div class="wrap"><p class="eyebrow">Portfólio</p><h2>Marcas que já contam a <em>própria</em> história.</h2></div>
-  <div class="gal" tabindex="0" role="group" aria-label="Galeria de projetos. Role para o lado.">
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img02.jpg" alt="Projeto Dayana Barreto" loading="lazy"><figcaption>Dayana Barreto</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img03.jpg" alt="Projeto Kaerre · Lab Dental" loading="lazy"><figcaption>Kaerre · Lab Dental</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img04.jpg" alt="Projeto TerraPrime" loading="lazy"><figcaption>TerraPrime</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img05.jpg" alt="Projeto Rafael Ferro" loading="lazy"><figcaption>Rafael Ferro</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img06.jpg" alt="Projeto DentisFlow" loading="lazy"><figcaption>DentisFlow</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img07.jpg" alt="Projeto Plenisse" loading="lazy"><figcaption>Plenisse</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img08.jpg" alt="Projeto THA Artesanato" loading="lazy"><figcaption>THA Artesanato</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img09.jpg" alt="Projeto effectLab" loading="lazy"><figcaption>effectLab</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img10.jpg" alt="Projeto DentisFlow" loading="lazy"><figcaption>DentisFlow</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img11.jpg" alt="Projeto Plenisse" loading="lazy"><figcaption>Plenisse</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img12.jpg" alt="Projeto THA Artesanato" loading="lazy"><figcaption>THA Artesanato</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img13.jpg" alt="Projeto Hospital de Olhos de Cascavel" loading="lazy"><figcaption>Hospital de Olhos de Cascavel</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img14.jpg" alt="Projeto ellas TPD" loading="lazy"><figcaption>ellas TPD</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img15.jpg" alt="Projeto Plenisse" loading="lazy"><figcaption>Plenisse</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img16.jpg" alt="Projeto Metta · Concept Lab" loading="lazy"><figcaption>Metta · Concept Lab</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img17.jpg" alt="Projeto Giovane Junc · Studio Dental" loading="lazy"><figcaption>Giovane Junc · Studio Dental</figcaption></figure>
-  </div>
-  <div class="wrap" style="margin-top:80px"><p class="eyebrow">Cronograma de entrega</p><h2>Do briefing à entrega final.</h2>
-    <ol class="tl">
-      <li><span>01</span><h3>Reunião para briefing</h3></li>
-      <li><span>02</span><h3>Agendamento</h3></li>
-      <li><span>03</span><h3>Início de projeto</h3></li>
-      <li><span>04</span><h3>Entrega de proposta</h3></li>
-      <li><span>05</span><h3>Criação de papelaria</h3></li>
-      <li><span>06</span><h3>Entrega de todos os materiais</h3></li>
-    </ol>
-  </div>
-</section>
-<section id="investimento"><div class="wrap center">
+<section id="investimento" style="padding-top:0"><div class="wrap center">
   <p class="eyebrow">Investimento</p>
-  <h2>Escolha o escopo do seu projeto.</h2>
-  <p>Combine os serviços conforme a necessidade da sua marca.</p>
+  <h2>Até onde a sua história <i>vai chegar?</i></h2>
+  <p class="s2">Combine os serviços conforme a necessidade da sua marca.</p>
   <div class="plans">
     <article class="plan">
-      <span class="tag">Essencial</span><h3>Logo + Manual</h3><p>A base visual da sua marca.</p>
+      <span class="tag">Essencial</span><h3>Logo + Manual</h3><p>O começo da sua história em forma de marca. A base visual de tudo o que vem depois.</p>
       <ul><li>Criação de logo</li><li>Manual básico da marca</li></ul>
       <div class="price"><small>R$</small>3.000<sup>,00</sup></div>
-      <a class="btn" href="https://wa.me/5545991135660?text=Vi%20sua%20proposta%2C%20quero%20falar%20sobre%20o%20escopo%20Essencial."><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.1-.2 0-.4.1-.5l.6-.7.2-.4v-.4l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.200-.8.8-.8 2s.9 2.300 1 2.500c.1.200 1.700 2.700 4.200 3.700 2 .8 2.400.6 2.900.6.500-.1 1.500-.6 1.700-1.200.2-.6.2-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg>Quero o Essencial</a>
+      <a class="btn" href="https://wa.me/5545991135660?text=Vi%20sua%20proposta%2C%20quero%20falar%20sobre%20o%20escopo%20Essencial.">Começar pelo Essencial<b><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2zm0 18.200a8.200 8.200 0 0 1-4.200-1.200l-.3-.2-3 .8.8-2.900-.2-.3A8.200 8.200 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.1-.2 0-.4.1-.5l.6-.7.2-.4v-.4l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.200-.8.8-.8 2s.9 2.300 1 2.500c.1.200 1.700 2.700 4.200 3.700 2 .8 2.400.6 2.900.6.500-.1 1.500-.6 1.700-1.200.2-.6.2-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg></b></a>
     </article>
     <article class="plan top">
-      <span class="tag">Mais completo</span><h3>Identidade completa</h3><p>Marca e toda a papelaria essencial.</p>
+      <span class="tag">Mais completo</span><h3>Identidade completa</h3><p>A sua história em cada detalhe. Marca e toda a papelaria essencial.</p>
       <ul><li>Logo + Manual básico da marca</li><li>Pasta</li><li>Moleskine</li><li>Marcador de página</li><li>Tag</li><li>Papel seda</li><li>Sacola</li></ul>
       <div class="price"><small>R$</small>5.500<sup>,00</sup></div>
-      <a class="btn" href="https://wa.me/5545991135660?text=Vi%20sua%20proposta%2C%20quero%20falar%20sobre%20o%20escopo%20Completo."><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.1-.2 0-.4.1-.5l.6-.7.2-.4v-.4l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.200-.8.8-.8 2s.9 2.300 1 2.500c.1.200 1.700 2.700 4.200 3.700 2 .8 2.400.6 2.900.6.500-.1 1.500-.6 1.700-1.200.2-.6.2-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg>Quero o Completo</a>
+      <a class="btn" href="https://wa.me/5545991135660?text=Vi%20sua%20proposta%2C%20quero%20falar%20sobre%20o%20escopo%20Completo.">Quero a identidade completa<b><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2zm0 18.200a8.200 8.200 0 0 1-4.200-1.200l-.3-.2-3 .8.8-2.900-.2-.3A8.200 8.200 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.1-.2 0-.4.1-.5l.6-.7.2-.4v-.4l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.200-.8.8-.8 2s.9 2.300 1 2.500c.1.200 1.700 2.700 4.200 3.700 2 .8 2.400.6 2.900.6.500-.1 1.500-.6 1.700-1.200.2-.6.2-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg></b></a>
     </article>
   </div>
   <div class="notes">
@@ -205,14 +221,13 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
     <div class="note"><b>Importante</b><span>Não entregamos nada físico (impresso), apenas conteúdo digital.</span></div>
   </div>
 </div></section>
-<section class="dark end"><div class="wrap">
-  <p class="eyebrow">Vamos começar</p>
-  <h2>Sua marca merece<br>uma história bem contada.</h2>
-  <p>Fale comigo para agendar o briefing e dar início ao posicionamento da sua marca.</p>
-  <a class="btn" href="https://wa.me/5545991135660?text=Vi%20sua%20proposta%2C%20quero%20falar%20sobre%20cria%C3%A7%C3%A3o%20de%20marca."><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.1-.2 0-.4.1-.5l.6-.7.2-.4v-.4l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.200-.8.8-.8 2s.9 2.300 1 2.500c.1.200 1.700 2.700 4.200 3.700 2 .8 2.400.6 2.900.6.500-.1 1.500-.6 1.700-1.200.2-.6.2-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg>Falar com o Wilian</a>
+<section class="end"><div class="wrap">
+  <h2>Sua marca merece <i>uma história bem contada.</i></h2>
+  <p>E essa história só você tem. Fale comigo para agendar o briefing e dar início ao posicionamento da sua marca.</p>
+  <a class="btn" href="https://wa.me/5545991135660?text=Vi%20sua%20proposta%2C%20quero%20contar%20a%20minha%20hist%C3%B3ria%20e%20criar%20a%20minha%20marca.">Quero contar a minha história<b><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2zm0 18.200a8.200 8.200 0 0 1-4.200-1.200l-.3-.2-3 .8.8-2.900-.2-.3A8.200 8.200 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.1-.2 0-.4.1-.5l.6-.7.2-.4v-.4l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.200-.8.8-.8 2s.9 2.300 1 2.500c.1.200 1.700 2.700 4.200 3.700 2 .8 2.400.6 2.900.6.500-.1 1.500-.6 1.700-1.200.2-.6.2-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg></b></a>
 </div></section>
 </main>
-<footer><div class="wrap"><span>WILIAN D'AVILA®</span><span>Branding &amp; Identidade Visual</span></div></footer>
+<footer><div class="wrap"><span>Wilian D'avila®</span><span>Branding &amp; Identidade Visual</span></div></footer>
 <script>
 (function(){
   var tunnel=document.getElementById('topo'),stage=tunnel.querySelector('.stage'),plane=tunnel.querySelector('.tplane'),
@@ -262,6 +277,30 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
     if(e.pointerType==='touch')return;
     tx=(e.clientX/innerWidth-.5)*2;ty=(e.clientY/innerHeight-.5)*2;wake();
   },{passive:true});
+})();
+(function(){
+  var root=document.documentElement,big=document.querySelector('.mani .big');
+  if(!big||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  function split(n){
+    [].slice.call(n.childNodes).forEach(function(c){
+      if(c.nodeType===3){
+        var f=document.createDocumentFragment();
+        c.textContent.split(/(\s+)/).forEach(function(t){
+          if(!t)return;
+          if(/^\s+$/.test(t)){f.appendChild(document.createTextNode(t));return}
+          var s=document.createElement('span');s.className='w';s.textContent=t;f.appendChild(s);
+        });
+        n.replaceChild(f,c);
+      }else split(c);
+    });
+  }
+  split(big);root.classList.add('js');
+  var ws=[].slice.call(big.querySelectorAll('.w'));
+  function up(){
+    var r=big.getBoundingClientRect(),h=innerHeight,p=(h*.82-r.top)/(r.height+h*.3),n=Math.ceil(Math.min(1,Math.max(0,p))*ws.length);
+    ws.forEach(function(w,i){w.classList.toggle('on',i<n)});
+  }
+  addEventListener('scroll',up,{passive:true});addEventListener('resize',up);up();
 })();
 
 </script>
