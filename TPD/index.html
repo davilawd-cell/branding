@@ -34,7 +34,7 @@ h1{font-size:clamp(44px,10.5vw,132px);font-weight:300;letter-spacing:.04em;line-
 .hero .btn{align-self:flex-start;margin-top:36px}
 .about{display:grid;grid-template-columns:5fr 6fr;gap:64px;align-items:center}
 .about img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:10px;filter:grayscale(1)}
-.about p{margin-top:16px;font-size:18px;color:#3b3945}
+.about p:not(.eyebrow){margin-top:16px;font-size:18px;color:#3b3945}
 .stats{display:flex;flex-wrap:wrap;gap:24px 44px;margin-top:36px}
 .stats b{display:block;font-size:40px;line-height:1.1}
 .stats span{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
@@ -50,7 +50,7 @@ h1{font-size:clamp(44px,10.5vw,132px);font-weight:300;letter-spacing:.04em;line-
 .tl span{font-size:13px;color:#a874f2}
 .tl h3{font-size:17px;line-height:1.25;margin-top:12px}
 .center{text-align:center}
-.center>p{color:var(--mut);margin-top:12px;font-size:18px}
+.center>p:not(.eyebrow){color:var(--mut);margin-top:12px;font-size:18px}
 .plans{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:48px auto 0;max-width:800px;text-align:left}
 .plan{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:16px;padding:32px 28px}
 .plan.top{border:1.5px solid var(--acc)}
