@@ -10,14 +10,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0b0b0a;--panel:#1b1b19;--panel2:#242422;--ink:#e6e3d3;--mut:#a3a092;--line:#31302c;--amb:#a67c3f}
+:root{--gap:clamp(96px,11vw,152px);--in:clamp(40px,5vw,64px);--bg:#0b0b0a;--panel:#1b1b19;--panel2:#242422;--ink:#e6e3d3;--mut:#a3a092;--line:#31302c;--amb:#a67c3f}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:104px}
 body{font-family:"Inter Tight",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:clip}
 img{display:block;max-width:100%}
 a{color:inherit}
 .wrap{width:min(1180px,100%);margin:auto;padding:0 24px}
-section{padding:120px 0}
+section{padding:0;margin-top:var(--gap)}
 i.s,h1 i,h2 i{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400;letter-spacing:-.01em}
 .eyebrow{font-size:13px;color:var(--mut);letter-spacing:.02em}
 h2{font-size:clamp(36px,5.6vw,72px);line-height:1.04;letter-spacing:-.025em;font-weight:500;margin-top:14px}
@@ -52,7 +52,7 @@ h1 i{display:block;font-size:1.08em}
 .js .w{opacity:.16;transition:opacity .35s}
 .js .w.on{opacity:1}
 .head{max-width:940px}
-.mos{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-flow:dense;gap:10px;margin-top:56px}
+.mos{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-flow:dense;gap:10px;margin-top:var(--in)}
 .mos figure{position:relative;margin:0;border-radius:14px;overflow:hidden;background:var(--panel);aspect-ratio:1/1}
 .mos figure.lg{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
 .mos img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
@@ -70,13 +70,13 @@ h1 i{display:block;font-size:1.08em}
 .stats{display:flex;flex-wrap:wrap;gap:24px 48px;margin-top:40px;padding-top:28px;border-top:1px solid var(--line)}
 .stats b{display:block;font-size:44px;font-weight:500;letter-spacing:-.03em;line-height:1.1}
 .stats span{font-size:14px;color:var(--mut)}
-.tl{list-style:none;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:56px}
+.tl{list-style:none;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:var(--in)}
 .tl li{padding:22px 18px;min-height:168px;border-radius:14px;background:var(--panel)}
 .tl span{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-size:24px;color:var(--mut)}
 .tl h3{font-size:18px;line-height:1.2;font-weight:500;margin-top:30px}
 .center{text-align:center}
 .center>p.s2{color:var(--mut);margin-top:14px;font-size:19px}
-.plans{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:56px auto 0;max-width:880px;text-align:left}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:var(--in) auto 0;max-width:880px;text-align:left}
 .plan{display:flex;flex-direction:column;border-radius:18px;padding:32px 28px 28px;background:var(--panel)}
 .plan.top{background:radial-gradient(90% 60% at 100% 100%,rgba(166,124,63,.4) 0,transparent 75%),var(--panel2)}
 .tag{font-size:14px;color:var(--mut)}
@@ -92,12 +92,11 @@ h1 i{display:block;font-size:1.08em}
 .note{border:1px solid var(--line);border-radius:14px;padding:18px 22px}
 .note b{display:block;font-weight:500}
 .note span{color:var(--mut)}
-.end{text-align:center;padding:150px 0;background:radial-gradient(55% 70% at 50% 100%,rgba(166,124,63,.32) 0,transparent 72%)}
+.end{text-align:center;padding:var(--gap) 0;background:radial-gradient(55% 70% at 50% 100%,rgba(166,124,63,.32) 0,transparent 72%)}
 .end p{color:var(--mut);margin:22px auto 34px;max-width:30em;font-size:19px}
 footer{color:var(--mut);font-size:14px;padding:26px 0;border-top:1px solid var(--line)}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 @media (max-width:860px){
- section{padding:84px 0}
  .about{grid-template-columns:1fr;gap:40px}
  .mos{grid-template-columns:1fr 1fr}
  .tl{grid-template-columns:1fr 1fr}
@@ -111,10 +110,40 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 @media (max-width:1039px){.mos{grid-template-columns:1fr 1fr}.mos figure.lg{aspect-ratio:1/1;grid-row:span 1}}
 .plan li.lab{margin-top:14px;padding-bottom:6px;border-top:0;font-size:14px;color:var(--mut)}
 .parc{margin-top:10px;font-size:15px;color:var(--mut)}
+.menu{position:fixed;inset:0 0 auto;z-index:50;background:rgba(11,11,10,.74);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid rgba(230,227,211,.1)}
+.menu .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:68px}
+.logo{font-size:17px;font-weight:600;letter-spacing:-.01em;text-decoration:none}
+.links{display:flex;align-items:center;gap:30px}
+.links a{font-size:15px;color:var(--mut);text-decoration:none;transition:color .2s}
+.links a:hover{color:var(--ink)}
+.links a.cta{display:inline-flex;align-items:center;min-height:42px;padding:0 20px;border-radius:99px;background:var(--ink);color:#111;font-weight:500}
+.links a.cta:hover{background:#f4f1e2;color:#111}
+.tog{display:none;min-height:44px;padding:0 18px;border:1px solid var(--line);border-radius:99px;background:none;color:var(--ink);font:inherit;font-size:15px;cursor:pointer}
+.menu a:focus-visible,.tog:focus-visible{outline:3px solid var(--amb);outline-offset:3px}
+@media (max-width:860px){
+ .tog{display:block}
+ .links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 20px;background:#0b0b0a;border-bottom:1px solid var(--line)}
+ .links.open{display:flex}
+ .links a{padding:14px 0;font-size:18px;color:var(--ink);border-bottom:1px solid var(--line)}
+ .links a.cta{justify-content:center;margin-top:16px;padding:0 20px;min-height:52px;border-bottom:0}
+}
 
 </style>
 </head>
 <body>
+<nav class="menu" aria-label="Menu principal">
+  <div class="wrap">
+    <a class="logo" href="#topo">Wilian D'avila®</a>
+    <button class="tog" type="button" aria-expanded="false" aria-controls="links">Menu</button>
+    <div class="links" id="links">
+      <a href="#portfolio">Portfólio</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#cronograma">Cronograma</a>
+      <a href="#investimento">Investimento</a>
+      <a class="cta" href="https://wa.me/5545991135660?text=Vi%20sua%20proposta%2C%20quero%20falar%20sobre%20cria%C3%A7%C3%A3o%20de%20marca.">Falar comigo</a>
+    </div>
+  </div>
+</nav>
 <header class="tunnel" id="topo">
   <div class="stage">
     <div class="tbg" aria-hidden="true"></div>
@@ -144,7 +173,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
   <p class="big">Existe uma história que só você viveu. Os anos de bancada, as decisões difíceis, o motivo de nunca ter desistido. <i>Ela é a sua marca.</i> Só falta alguém mostrar isso ao mundo.</p>
   <p class="sub">Tudo o que vemos desperta uma sensação. Sua marca não deveria seguir um segmento ou uma tendência. Ela precisa transmitir a sua essência, a sua personalidade e a identidade que você quer que as pessoas reconheçam.</p>
 </div></section>
-<section style="padding-top:0"><div class="wrap">
+<section id="portfolio"><div class="wrap">
   <div class="head"><p class="eyebrow">Portfólio</p>
   <h2>Nenhuma dessas marcas <i>poderia ser de outra pessoa.</i></h2></div>
   <div class="mos">
@@ -166,7 +195,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
       <div class="say amb"><p>A próxima história<br><i class="s">pode ser a sua.</i></p><a class="btn" href="#investimento">Ver como começar<b aria-hidden="true">↓</b></a></div>
   </div>
 </div></section>
-<section style="padding-top:0"><div class="wrap about">
+<section id="sobre"><div class="wrap about">
   <img src="https://investimento.marketingparalaboratorio.com.br/img/img01.jpg" alt="Retrato de Wilian D'avila" loading="lazy">
   <div>
     <p class="eyebrow">Quem vai ouvir a sua história</p>
@@ -177,7 +206,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
     <div class="stats"><div><b>21</b><span>anos de design</span></div><div><b>+150</b><span>marcas posicionadas</span></div><div><b>100%</b><span>entrega digital</span></div></div>
   </div>
 </div></section>
-<section style="padding-top:0"><div class="wrap">
+<section id="cronograma"><div class="wrap">
   <p class="eyebrow">Cronograma de entrega</p>
   <h2>Da sua história <i>à sua marca.</i></h2>
   <ol class="tl">
@@ -189,7 +218,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
       <li><span>6</span><h3>Entrega de todos os materiais</h3></li>
   </ol>
 </div></section>
-<section id="investimento" style="padding-top:0"><div class="wrap center">
+<section id="investimento"><div class="wrap center">
   <p class="eyebrow">Investimento</p>
   <h2>Até onde a sua história <i>vai chegar?</i></h2>
   <p class="s2">Combine os serviços conforme a necessidade da sua marca.</p>
@@ -270,6 +299,12 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
     if(e.pointerType==='touch')return;
     tx=(e.clientX/innerWidth-.5)*2;ty=(e.clientY/innerHeight-.5)*2;wake();
   },{passive:true});
+})();
+(function(){
+  var t=document.querySelector('.tog'),l=document.getElementById('links');
+  function set(o){l.classList.toggle('open',o);t.setAttribute('aria-expanded',o)}
+  t.addEventListener('click',function(){set(!l.classList.contains('open'))});
+  l.addEventListener('click',function(e){if(e.target.tagName==='A')set(false)});
 })();
 (function(){
   var root=document.documentElement,big=document.querySelector('.mani .big');
