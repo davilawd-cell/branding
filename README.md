@@ -1,6 +1,9 @@
 # branding
 
-Landing pages publicadas em marketingparalaboratorio.com.br/investimento.
+Landing pages publicadas em investimento.marketingparalaboratorio.com.br.
 
-Cada envio para a branch `main` é publicado automaticamente pela Hostinger.
+Cada envio para a branch `main` é publicado automaticamente pela Hostinger em `public_html/lp`.
 Cada LP fica em sua própria pasta: `nome-da-lp/index.html`.
+
+- LP de investimento: `TPD/index.html`, no ar em /TPD
+- A pasta `TPD` do site tem um `index.php` que exibe `lp/TPD/index.html`
