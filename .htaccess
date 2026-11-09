@@ -1,0 +1,12 @@
+# Bloqueia arquivos internos do Git e de documentação
+RedirectMatch 404 /\.git
+RedirectMatch 404 /README\.md$
+RedirectMatch 404 /\.htaccess$
+# Não lista o conteúdo das pastas
+Options -Indexes
+# Cabeçalhos de segurança
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
