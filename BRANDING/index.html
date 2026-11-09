@@ -127,6 +127,16 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
  .links a{padding:14px 0;font-size:18px;color:var(--ink);border-bottom:1px solid var(--line)}
  .links a.cta{justify-content:center;margin-top:16px;padding:0 20px;min-height:52px;border-bottom:0}
 }
+.case{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:var(--in)}
+.case figure{position:relative;margin:0;border-radius:14px;overflow:hidden;background:var(--panel);aspect-ratio:4/3}
+.case figure.main{grid-column:1/-1;aspect-ratio:16/8}
+.case img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.case figure:hover img{transform:scale(1.04)}
+.case figcaption{position:absolute;inset:auto 0 0;padding:36px 16px 14px;font-size:14px;background:linear-gradient(to top,rgba(0,0,0,.72),transparent)}
+.tl.five{grid-template-columns:repeat(5,1fr)}
+.plans.one{grid-template-columns:1fr;max-width:560px}
+.plans.one+.notes{max-width:560px;grid-template-columns:1fr}
+@media (max-width:860px){.case{grid-template-columns:1fr 1fr}.case figure.main{aspect-ratio:4/3}.tl.five{grid-template-columns:1fr 1fr}}
 
 </style>
 </head>
@@ -136,11 +146,12 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
     <a class="logo" href="#topo">Wilian D'avila®</a>
     <button class="tog" type="button" aria-expanded="false" aria-controls="links">Menu</button>
     <div class="links" id="links">
+      <a href="#destaque">Destaque</a>
       <a href="#portfolio">Portfólio</a>
       <a href="#sobre">Sobre</a>
       <a href="#cronograma">Cronograma</a>
       <a href="#investimento">Investimento</a>
-      <a class="cta" href="https://wa.me/5545991135660?text=Vi%20sua%20proposta%2C%20quero%20falar%20sobre%20cria%C3%A7%C3%A3o%20de%20marca.">Falar comigo</a>
+      <a class="cta" href="https://wa.me/5545991135660?text=Vi%20sua%20proposta%20de%20branding%2C%20quero%20falar%20sobre%20cria%C3%A7%C3%A3o%20de%20marca.">Falar comigo</a>
     </div>
   </div>
 </nav>
@@ -150,22 +161,22 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
     <div class="tring r1" aria-hidden="true"></div>
     <div class="tring r2" aria-hidden="true"></div>
     <div class="tplane" aria-hidden="true">
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img02.jpg" alt="" draggable="false"><figcaption>Dayana Barreto</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img03.jpg" alt="" draggable="false"><figcaption>Kaerre · Lab Dental</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img04.jpg" alt="" draggable="false"><figcaption>TerraPrime</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img05.jpg" alt="" draggable="false"><figcaption>Rafael Ferro</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img06.jpg" alt="" draggable="false"><figcaption>DentisFlow</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img07.jpg" alt="" draggable="false"><figcaption>Plenisse</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img08.jpg" alt="" draggable="false"><figcaption>THA Artesanato</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img09.jpg" alt="" draggable="false"><figcaption>effectLab</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img10.jpg" alt="" loading="lazy" draggable="false"><figcaption>DentisFlow</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img11.jpg" alt="" loading="lazy" draggable="false"><figcaption>Plenisse</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img12.jpg" alt="" loading="lazy" draggable="false"><figcaption>THA Artesanato</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img13.jpg" alt="" loading="lazy" draggable="false"><figcaption>Hospital de Olhos de Cascavel</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img14.jpg" alt="" loading="lazy" draggable="false"><figcaption>ellas TPD</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img15.jpg" alt="" loading="lazy" draggable="false"><figcaption>Plenisse</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img16.jpg" alt="" loading="lazy" draggable="false"><figcaption>Metta · Concept Lab</figcaption></figure>
-      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/img/img17.jpg" alt="" loading="lazy" draggable="false"><figcaption>Giovane Junc · Studio Dental</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/hoc-outdoor.jpg" alt="" draggable="false"><figcaption>Hospital de Olhos de Cascavel</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/dai-caixa.jpg" alt="" draggable="false"><figcaption>Dayana Barreto</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/dentisflow-logo-mockup.jpg" alt="" draggable="false"><figcaption>DentisFlow</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/itaara-93.jpg" alt="" draggable="false"><figcaption>Tabelionato Itaara</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/plenisse-foil-logo.jpg" alt="" draggable="false"><figcaption>Plenisse</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/reference-capacete.jpg" alt="" draggable="false"><figcaption>Reference</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/suzana-apresentacao-suzana-23.jpg" alt="" draggable="false"><figcaption>Suzana Fiorentin</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/terra-prime-branding-23.jpg" alt="" draggable="false"><figcaption>TerraPrime</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/hoc-envelope.jpg" alt="" loading="lazy" draggable="false"><figcaption>Hospital de Olhos de Cascavel</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/tha-icon.jpg" alt="" loading="lazy" draggable="false"><figcaption>THA Artesanato</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/itaara-cartao.jpg" alt="" loading="lazy" draggable="false"><figcaption>Tabelionato Itaara</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/plenisse-logo-fachada.jpg" alt="" loading="lazy" draggable="false"><figcaption>Plenisse</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/reference-porta.jpg" alt="" loading="lazy" draggable="false"><figcaption>Reference</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/dentisflow-jewelery-box-mockup-4.jpg" alt="" loading="lazy" draggable="false"><figcaption>DentisFlow</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/suzana-apresentacao-suzana-21.jpg" alt="" loading="lazy" draggable="false"><figcaption>Suzana Fiorentin</figcaption></figure>
+      <figure class="tcard"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/hoc-gift-bag-mockup-1.jpg" alt="" loading="lazy" draggable="false"><figcaption>Hospital de Olhos de Cascavel</figcaption></figure>
     </div>
     <div class="tcopy">
       <h1>Marcas contam <i>histórias.</i></h1>
@@ -178,29 +189,39 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
   <p class="big">Existe uma história que só você viveu. Os anos de trabalho, as decisões difíceis, o motivo de nunca ter desistido. <i>Ela é a sua marca.</i> Só falta alguém mostrar isso ao mundo.</p>
   <p class="sub">Tudo o que vemos desperta uma sensação. Sua marca não deveria seguir um segmento ou uma tendência. Ela precisa transmitir a sua essência, a sua personalidade e a identidade que você quer que as pessoas reconheçam.</p>
 </div></section>
+<section id="destaque"><div class="wrap">
+  <div class="head"><p class="eyebrow">Caso em destaque · Hospital de Olhos de Cascavel</p>
+  <h2>Do primeiro traço <i>até a cidade inteira ver.</i></h2></div>
+  <div class="case">
+    <figure class="main"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/hoc-outdoor.jpg" alt="A marca na rua, Hospital de Olhos de Cascavel" loading="lazy"><figcaption>A marca na rua</figcaption></figure>
+    <figure class=""><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/hoc-logo-sketch-2.jpg" alt="O traço, Hospital de Olhos de Cascavel" loading="lazy"><figcaption>O traço</figcaption></figure>
+    <figure class=""><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/hoc-envelope.jpg" alt="A papelaria, Hospital de Olhos de Cascavel" loading="lazy"><figcaption>A papelaria</figcaption></figure>
+    <figure class=""><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/hoc-gift-bag-mockup-1.jpg" alt="Os detalhes, Hospital de Olhos de Cascavel" loading="lazy"><figcaption>Os detalhes</figcaption></figure>
+  </div>
+</div></section>
 <section id="portfolio"><div class="wrap">
   <div class="head"><p class="eyebrow">Portfólio</p>
   <h2>Nenhuma dessas marcas <i>poderia ser de outra pessoa.</i></h2></div>
   <div class="mos">
-      <figure class="lg"><img src="https://investimento.marketingparalaboratorio.com.br/img/img13.jpg" alt="Projeto de marca Hospital de Olhos de Cascavel" loading="lazy"><figcaption>Hospital de Olhos de Cascavel</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img02.jpg" alt="Projeto de marca Dayana Barreto" loading="lazy"><figcaption>Dayana Barreto</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img03.jpg" alt="Projeto de marca Kaerre · Lab Dental" loading="lazy"><figcaption>Kaerre · Lab Dental</figcaption></figure>
+      <figure class="lg"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/terra-prime-branding-23.jpg" alt="Projeto de marca TerraPrime" loading="lazy"><figcaption>TerraPrime</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/dai-caixa.jpg" alt="Projeto de marca Dayana Barreto" loading="lazy"><figcaption>Dayana Barreto</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/dentisflow-logo-mockup.jpg" alt="Projeto de marca DentisFlow" loading="lazy"><figcaption>DentisFlow</figcaption></figure>
       <div class="say"><p>Não existe modelo pronto.<br><i class="s">Cada marca nasce de uma conversa.</i></p><small>É ouvindo o que você viveu que eu encontro o que nenhuma outra marca pode dizer.</small></div>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img05.jpg" alt="Projeto de marca Rafael Ferro" loading="lazy"><figcaption>Rafael Ferro</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img06.jpg" alt="Projeto de marca DentisFlow" loading="lazy"><figcaption>DentisFlow</figcaption></figure>
-      <figure class="lg"><img src="https://investimento.marketingparalaboratorio.com.br/img/img14.jpg" alt="Projeto de marca ellas TPD" loading="lazy"><figcaption>ellas TPD</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img07.jpg" alt="Projeto de marca Plenisse" loading="lazy"><figcaption>Plenisse</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img08.jpg" alt="Projeto de marca THA Artesanato" loading="lazy"><figcaption>THA Artesanato</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/itaara-93.jpg" alt="Projeto de marca Tabelionato Itaara" loading="lazy"><figcaption>Tabelionato Itaara</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/plenisse-foil-logo.jpg" alt="Projeto de marca Plenisse" loading="lazy"><figcaption>Plenisse</figcaption></figure>
+      <figure class="lg"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/suzana-apresentacao-suzana-21.jpg" alt="Projeto de marca Suzana Fiorentin" loading="lazy"><figcaption>Suzana Fiorentin</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/tha-icon.jpg" alt="Projeto de marca THA Artesanato" loading="lazy"><figcaption>THA Artesanato</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/reference-capacete.jpg" alt="Projeto de marca Reference" loading="lazy"><figcaption>Reference</figcaption></figure>
       <div class="say"><p>O que era memória<br><i class="s">vira forma, cor e papel.</i></p><small>Sua origem, seu jeito e sua convicção passam a existir no que as pessoas veem.</small></div>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img09.jpg" alt="Projeto de marca effectLab" loading="lazy"><figcaption>effectLab</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img10.jpg" alt="Projeto de marca DentisFlow" loading="lazy"><figcaption>DentisFlow</figcaption></figure>
-      <figure class="lg"><img src="https://investimento.marketingparalaboratorio.com.br/img/img16.jpg" alt="Projeto de marca Metta · Concept Lab" loading="lazy"><figcaption>Metta · Concept Lab</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img11.jpg" alt="Projeto de marca Plenisse" loading="lazy"><figcaption>Plenisse</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img12.jpg" alt="Projeto de marca THA Artesanato" loading="lazy"><figcaption>THA Artesanato</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img15.jpg" alt="Projeto de marca Plenisse" loading="lazy"><figcaption>Plenisse</figcaption></figure>
-      <figure><img src="https://investimento.marketingparalaboratorio.com.br/img/img17.jpg" alt="Projeto de marca Giovane Junc · Studio Dental" loading="lazy"><figcaption>Giovane Junc · Studio Dental</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/dai-free-curved-exhibition-stand-mockup-1.jpg" alt="Projeto de marca Dayana Barreto" loading="lazy"><figcaption>Dayana Barreto</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/itaara-cartao.jpg" alt="Projeto de marca Tabelionato Itaara" loading="lazy"><figcaption>Tabelionato Itaara</figcaption></figure>
+      <figure class="lg"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/plenisse-logo-fachada.jpg" alt="Projeto de marca Plenisse" loading="lazy"><figcaption>Plenisse</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/dentisflow-jewelery-box-mockup-4.jpg" alt="Projeto de marca DentisFlow" loading="lazy"><figcaption>DentisFlow</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/suzana-apresentacao-suzana-23.jpg" alt="Projeto de marca Suzana Fiorentin" loading="lazy"><figcaption>Suzana Fiorentin</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/tha-mug.jpg" alt="Projeto de marca THA Artesanato" loading="lazy"><figcaption>THA Artesanato</figcaption></figure>
+      <figure><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/terra-prime-branding-20.jpg" alt="Projeto de marca TerraPrime" loading="lazy"><figcaption>TerraPrime</figcaption></figure>
       <div class="say"><p>Quando a marca é verdadeira,<br><i class="s">ela se sente antes de se ler.</i></p><small>Tudo o que vemos desperta uma sensação. A sua deveria ser reconhecida como sua.</small></div>
-      <figure class="lg"><img src="https://investimento.marketingparalaboratorio.com.br/img/img04.jpg" alt="Projeto de marca TerraPrime" loading="lazy"><figcaption>TerraPrime</figcaption></figure>
+      <figure class="lg"><img src="https://investimento.marketingparalaboratorio.com.br/lp/BRANDING/img/reference-porta.jpg" alt="Projeto de marca Reference" loading="lazy"><figcaption>Reference</figcaption></figure>
       <div class="say amb"><p>A próxima história<br><i class="s">pode ser a sua.</i></p><a class="btn" href="#investimento">Ver como começar<b aria-hidden="true">↓</b></a></div>
   </div>
 </div></section>
@@ -216,46 +237,37 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
   </div>
 </div></section>
 <section id="cronograma"><div class="wrap">
-  <p class="eyebrow">Cronograma de entrega</p>
+  <p class="eyebrow">Cronograma de entrega · 20 dias</p>
   <h2>Da sua história <i>à sua marca.</i></h2>
-  <ol class="tl">
+  <ol class="tl five">
       <li><span>1</span><h3>Reunião para briefing</h3></li>
       <li><span>2</span><h3>Agendamento</h3></li>
       <li><span>3</span><h3>Início de projeto</h3></li>
-      <li><span>4</span><h3>Entrega de proposta</h3></li>
-      <li><span>5</span><h3>Criação de papelaria</h3></li>
-      <li><span>6</span><h3>Entrega de todos os materiais</h3></li>
+      <li><span>4</span><h3>Apresentação da marca</h3></li>
+      <li><span>5</span><h3>Entrega da marca e do manual</h3></li>
   </ol>
 </div></section>
 <section id="investimento"><div class="wrap center">
   <p class="eyebrow">Investimento</p>
   <h2>Até onde a sua história <i>vai chegar?</i></h2>
-  <p class="s2">Combine os serviços conforme a necessidade da sua marca.</p>
-  <div class="plans">
-    <article class="plan">
-      <span class="tag">Essencial</span><h3>Logo + Manual</h3><p>O começo da sua história em forma de marca. A base visual de tudo o que vem depois.</p>
-      <ul><li>Criação de logo</li><li>Manual básico da marca</li></ul>
-      <div class="price"><small>R$</small>3.000<sup>,00</sup></div>
-      <p class="parc">à vista no PIX, ou 3x de R$ 1.200,00 no cartão</p>
-      <a class="btn" href="https://wa.me/5545991135660?text=Vi%20sua%20proposta%2C%20quero%20falar%20sobre%20o%20escopo%20Essencial.">Começar pelo Essencial<b><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2zm0 18.200a8.200 8.200 0 0 1-4.200-1.200l-.3-.2-3 .8.8-2.900-.2-.3A8.200 8.200 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.1-.2 0-.4.1-.5l.6-.7.2-.4v-.4l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.200-.8.8-.8 2s.9 2.300 1 2.500c.1.200 1.700 2.700 4.200 3.700 2 .8 2.400.6 2.900.6.500-.1 1.500-.6 1.700-1.200.2-.6.2-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg></b></a>
-    </article>
+  <p class="s2">Um projeto completo para a sua marca começar do jeito certo.</p>
+  <div class="plans one">
     <article class="plan top">
-      <span class="tag">Mais completo</span><h3>Identidade completa</h3><p>A sua história em cada detalhe. Marca e toda a papelaria essencial.</p>
-      <ul><li>Logo</li><li>Manual de marca</li><li class="lab">Papelaria</li><li>Caixa</li><li>Sacola</li><li>Tag</li><li>Adesivos</li><li>Papel seda</li></ul>
-      <div class="price"><small>R$</small>5.500<sup>,00</sup></div>
-      <p class="parc">à vista no PIX, ou 3x de R$ 2.100,00 no cartão</p>
-      <a class="btn" href="https://wa.me/5545991135660?text=Vi%20sua%20proposta%2C%20quero%20falar%20sobre%20o%20escopo%20Completo.">Quero a identidade completa<b><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2zm0 18.200a8.200 8.200 0 0 1-4.200-1.200l-.3-.2-3 .8.8-2.900-.2-.3A8.200 8.200 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.1-.2 0-.4.1-.5l.6-.7.2-.4v-.4l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.200-.8.8-.8 2s.9 2.300 1 2.500c.1.200 1.700 2.700 4.200 3.700 2 .8 2.400.6 2.900.6.500-.1 1.500-.6 1.700-1.200.2-.6.2-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg></b></a>
+      <span class="tag">Micro empresa</span><h3>Logo + Manual</h3><p>O começo da sua história em forma de marca. A base visual de tudo o que vem depois.</p>
+      <ul><li>Criação de logo</li><li>Manual básico da marca</li><li>Prazo de entrega de 20 dias</li></ul>
+      <div class="price"><small>R$</small>2.700<sup>,00</sup></div>
+      <a class="btn" href="https://wa.me/5545991135660?text=Vi%20sua%20proposta%20de%20branding%2C%20quero%20come%C3%A7ar%20a%20minha%20marca.">Quero começar a minha marca<b><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2zm0 18.200a8.200 8.200 0 0 1-4.200-1.200l-.3-.2-3 .8.8-2.900-.2-.3A8.200 8.200 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.1-.2 0-.4.1-.5l.6-.7.2-.4v-.4l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.200-.8.8-.8 2s.9 2.300 1 2.500c.1.200 1.700 2.700 4.200 3.700 2 .8 2.400.6 2.900.6.500-.1 1.500-.6 1.700-1.200.2-.6.2-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg></b></a>
     </article>
   </div>
   <div class="notes">
-    <div class="note"><b>Condição de pagamento</b><span>À vista e adiantado via PIX, ou em 3x no cartão.</span></div>
+    <div class="note"><b>Condição de pagamento</b><span>À vista, adiantado, via PIX.</span></div>
     <div class="note"><b>Importante</b><span>Não entregamos nada físico (impresso), apenas conteúdo digital.</span></div>
   </div>
 </div></section>
 <section class="end"><div class="wrap">
   <h2>Sua marca merece<br><i>uma história bem contada.</i></h2>
   <p>E essa história só você tem. Fale comigo para agendar o briefing e dar início ao posicionamento da sua marca.</p>
-  <a class="btn" href="https://wa.me/5545991135660?text=Vi%20sua%20proposta%2C%20quero%20contar%20a%20minha%20hist%C3%B3ria%20e%20criar%20a%20minha%20marca.">Quero contar a minha história<b><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2zm0 18.200a8.200 8.200 0 0 1-4.200-1.200l-.3-.2-3 .8.8-2.900-.2-.3A8.200 8.200 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.1-.2 0-.4.1-.5l.6-.7.2-.4v-.4l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.200-.8.8-.8 2s.9 2.300 1 2.500c.1.200 1.700 2.700 4.200 3.700 2 .8 2.400.6 2.900.6.500-.1 1.500-.6 1.700-1.200.2-.6.2-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg></b></a>
+  <a class="btn" href="https://wa.me/5545991135660?text=Vi%20sua%20proposta%20de%20branding%2C%20quero%20contar%20a%20minha%20hist%C3%B3ria%20e%20criar%20a%20minha%20marca.">Quero contar a minha história<b><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2zm0 18.200a8.200 8.200 0 0 1-4.200-1.200l-.3-.2-3 .8.8-2.900-.2-.3A8.200 8.200 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.1-.2 0-.4.1-.5l.6-.7.2-.4v-.4l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.200-.8.8-.8 2s.9 2.300 1 2.500c.1.200 1.700 2.700 4.200 3.700 2 .8 2.400.6 2.900.6.500-.1 1.500-.6 1.700-1.200.2-.6.2-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg></b></a>
 </div></section>
 </main>
 <footer><div class="wrap"><span>Wilian D'avila®</span><span>Branding &amp; Identidade Visual</span></div></footer>
